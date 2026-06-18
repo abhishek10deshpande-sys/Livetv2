@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: fantastic-live-tv
+    runtime: node
+    plan: free              # upgrade to 'starter' for always-on
+    region: oregon          # or frankfurt, singapore, ohio
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true        # auto-deploy on push to main branch
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000          # Render assigns its own PORT; this is a fallback
+      - key: LOG_LEVEL
+        value: info
+      - key: BASE_URL
+        sync: false           # Set this manually in the Render dashboard after first deploy
+                              # e.g. https://fantastic-live-tv.onrender.com
+      - key: ADMIN_TOKEN
+        generateValue: true   # Render auto-generates a random token

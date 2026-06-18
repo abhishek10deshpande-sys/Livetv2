@@ -1,0 +1,104 @@
+{
+  "id": "community.fantasticlivetv",
+  "version": "1.0.0",
+  "name": "Fantastic Live TV",
+  "description": "Free legal live TV channels — News, Sports, Entertainment, Music, Kids, Education, Regional & International. All streams are publicly available.",
+  "logo": "https://raw.githubusercontent.com/YOUR_USERNAME/fantastic-live-tv/main/src/assets/logo.png",
+  "background": "https://raw.githubusercontent.com/YOUR_USERNAME/fantastic-live-tv/main/src/assets/background.jpg",
+  "contactEmail": "your@email.com",
+  "types": ["tv"],
+  "catalogs": [
+    {
+      "type": "tv",
+      "id": "fantastic_all",
+      "name": "All Channels",
+      "extra": [
+        { "name": "search", "isRequired": false },
+        { "name": "skip", "isRequired": false }
+      ]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_news",
+      "name": "📰 News",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["News"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_sports",
+      "name": "⚽ Sports",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Sports"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_entertainment",
+      "name": "🎬 Entertainment",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Entertainment"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_music",
+      "name": "🎵 Music",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Music"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_kids",
+      "name": "🧸 Kids",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Kids"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_education",
+      "name": "📚 Education",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Education"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_regional",
+      "name": "🗺️ Regional",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["Regional"]
+    },
+    {
+      "type": "tv",
+      "id": "fantastic_international",
+      "name": "🌍 International",
+      "extra": [
+        { "name": "skip", "isRequired": false }
+      ],
+      "genres": ["International"]
+    }
+  ],
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "idPrefixes": ["fantastic_"],
+  "behaviorHints": {
+    "adult": false,
+    "p2p": false,
+    "configurable": false
+  }
+}
